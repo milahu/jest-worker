@@ -57,7 +57,8 @@ class Farm {
 
   doWork(method, ...args) {
     (0, _debug.debug)('');
-    (0, _debug.debug)(`Farm.doWork: method=${method} args=${args}`);
+    (0, _debug.debug)(`Farm.doWork: method=${method}`); // args is too verbose
+
     const customMessageListeners = new Set();
 
     const addCustomMessageListener = listener => {

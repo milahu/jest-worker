@@ -57,7 +57,7 @@ export default class Farm {
     ...args: Array<unknown>
   ): PromiseWithCustomMessage<unknown> {
     debug('');
-    debug(`Farm.doWork: method=${method} args=${args}`);
+    debug(`Farm.doWork: method=${method}`); // args is too verbose
     const customMessageListeners = new Set<OnCustomMessage>();
 
     const addCustomMessageListener = (listener: OnCustomMessage) => {
