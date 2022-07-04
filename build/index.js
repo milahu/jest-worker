@@ -25,10 +25,10 @@ var _Farm = _interopRequireDefault(require('./Farm'));
 
 var _WorkerPool = _interopRequireDefault(require('./WorkerPool'));
 
-function _gnumakeJobclient() {
-  const data = require('@milahu/gnumake-jobclient');
+function _gnumakeTokenpool() {
+  const data = require('gnumake-tokenpool');
 
-  _gnumakeJobclient = function () {
+  _gnumakeTokenpool = function () {
     return data;
   };
 
@@ -159,7 +159,7 @@ class JestWorker {
         (_this$_options$jobCli = this._options.jobClient) !== null &&
         _this$_options$jobCli !== void 0
           ? _this$_options$jobCli
-          : (0, _gnumakeJobclient().JobClient)()
+          : (0, _gnumakeTokenpool().JobClient)()
     };
     (0, _debug.debug)(
       `Worker.constructor: workerPoolOptions.jobClient = ${workerPoolOptions.jobClient}`

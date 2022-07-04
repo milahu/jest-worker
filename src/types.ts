@@ -7,7 +7,7 @@
 
 import type {ForkOptions} from 'child_process';
 import type {EventEmitter} from 'events';
-import type {JobClient} from '@milahu/gnumake-jobclient';
+import type {JobClient} from 'gnumake-tokenpool';
 
 // import type {ResourceLimits} from 'worker_threads';
 // This is not present in the Node 12 typings

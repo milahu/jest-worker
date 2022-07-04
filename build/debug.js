@@ -58,6 +58,11 @@ function _interopRequireWildcard(obj) {
 }
 
 const debug = process().env.DEBUG_JEST_WORKER
-  ? msg => console.log(`jest-worker: ${msg}`)
+  ? msg =>
+      console.log(
+        `debug jest-worker ${process().pid} ${new Date().toLocaleString(
+          'af'
+        )}.${String(Date.now() % 1000).padStart(3, '0')}: ${msg}`
+      )
   : _msg => {};
 exports.debug = debug;

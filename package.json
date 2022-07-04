@@ -15,10 +15,10 @@
     "supports-color": "^7.0.0"
   },
   "devDependencies": {
-    "@milahu/gnumake-jobclient": "^0.0.3",
     "@types/merge-stream": "^1.1.2",
     "@types/supports-color": "^7.2.0",
     "get-stream": "^6.0.0",
+    "gnumake-tokenpool": "github:milahu/gnumake-tokenpool#4eb559ae323bef153cbe1d0a5e3496b377fb7856",
     "worker-farm": "^1.6.0"
   },
   "engines": {

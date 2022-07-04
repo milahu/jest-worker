@@ -10,7 +10,7 @@
 import {cpus} from 'os';
 import Farm from './Farm';
 import WorkerPool from './WorkerPool';
-import {JobClient} from '@milahu/gnumake-jobclient';
+import {JobClient} from 'gnumake-tokenpool';
 import {debug} from './debug';
 import type {
   FarmOptions,
